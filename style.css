@@ -42,8 +42,30 @@ body::before {
 }
 
 canvas {
-  border: 2px solid white;
-  border-radius: 10px;
+  border: 2px dashed greenyellow;
+  animation: border infinite 3s;
+  border-radius: 25px;
   margin-top: 130px;
   box-shadow: 5px 5px 5px #fff;
+}
+
+@keyframes border {
+  0% {
+    border-radius: 0px;
+  }
+  20% {
+    border-radius: 5px;
+  }
+  40% {
+    border-radius: 10px;
+  }
+  60% {
+    border-radius: 15px;
+  }
+  80% {
+    border-radius: 20px;
+  }
+  100% {
+    border-radius: 25px;
+  }
 }
